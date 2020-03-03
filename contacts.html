@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>TmCargo</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,700,800|Open+Sans:300,400,700,800|Roboto:300,400,700" rel="stylesheet">
+
+
+        <!-- Styles -->
+        <link href="http://tmcargo.site/css/app.css" rel="stylesheet">
+
+        <!-- Script -->
+        <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navigation" id="navbar">
+	<ul id="topnav">
+		<li id="logo">
+			<a href="index.html">TmCargo</a>
+		</li>
+		<li id="menu">
+			<a href="about.html">About us</a>
+			<a href="services.html">Services</a>
+			<a href="news.html">News</a>
+			<a href="contacts.html">Contacts</a>
+		</li>
+	</ul>
+</nav>
+
+
+<span style="font-size:30px;cursor:pointer" class="burger" onclick="openNav()">&#9776;</span>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="/about">About us</a>
+                <a href="/services">Services</a>
+                <a href="/news">News</a>
+                <a href="/contacts">Contacts</a>
+              </div>
+            </div>
+
+            <main id="container">
+                
+
+
+<section id="contacts" class="section-p">
+    <div class="intro">
+         <main class="intro_title">
+            <h1 class="all_title">Contact Us</h1>
+            <p class="all_main_p">Welcome to contacts page, you are welcome to get in touch with us to learn more about our services!</p>  
+        </main>
+        <aside class="intro_image">
+            <img src="images/shopp.svg" width="300" height="auto">
+        </aside>    
+    </div>
+
+  
+    <div id="contactTabs">
+        <div class="contactTab" id="contactTab_tm">
+            <h2 class="secondary_title">Turkmenistan</h2>
+            <div class="contactContent" id="contact_content_tm">
+                <h3 class="contactCity">Ashgabat</h3>
+                <div class="ps">
+                    <p class="contactAddress">Turkmenbashi Avenue 135, 1st floor</p>
+                    <p class="contactPhone">Guvanch: +99312233445</p>
+                    <p class="contactPhone">Batyr: +99312233445</p>
+                    <p class="contactPhone">Nury: +99312233445</p>
+                    <p class="contactsEmail">info@tmcargo.biz</p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="contactTab" id="contactTab_cn">
+            <h2 class="secondary_title">China</h2>
+            <div class="contactContent" id="contact_content_cn">
+                <h3 class="contactCity">Beijing</h3>
+                <div class="ps">
+                    <p class="contactAddress">Zhichun street 12, 9th floor</p>
+                    <p class="contactPhone">Sultan: +8613061110117</p>
+                    <p class="contactsEmail">info@tmcargo.biz</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+            </main>
+            <section id="footer" class="section-p">
+	<div id="f-address">
+		<h3>Turkmen Cargo</h3>
+		<p>Ataturk 12, Ashgabat, 744000</p>
+		<p>+993 12 10-02-02</p>
+	</div>
+	<ul id="footer_lists">
+		<li class="footer_list">
+			<h3>about us</h3>
+		</li>
+		<li class="footer_list">
+			<h3>contacts</h3>
+		</li>
+		<li class="footer_list">
+			<h3>news</h3>
+		</li>
+	</ul>
+	<div>
+		<p>&#169; All rights reserved</p>
+	</div>
+</section>       
+</div>
+
+
+
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>        
+<script type="text/javascript">
+    
+// NAVIGATION OVERLAY
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+
+
+
+ScrollOut({
+    once: true
+});
+
+console.clear();
+
+ScrollOut({
+   targets: '.photo', 
+   once: true,
+   onShown: function(el) {
+      if (!el.src) { 
+         el.src = el.dataset.src;
+      }
+   }
+});
+
+// toggleButton.addEventListener('click', function(){
+//     console.log('clicked');
+//     return navbarLinks.classList.toggle('ring');
+// })
+
+
+</script>
+
+<script src="/js/app.js"></script>
+</body>
+
+</html>
